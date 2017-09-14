@@ -1,0 +1,27 @@
+2017-09-14 15:34:02.5468 AllServer 1 (Program.cs:29) server start........................
+2017-09-14 15:34:02.9168 AllServer 1 (LocationComponent.cs:103) location add key: 98656219430913 appid: 1
+2017-09-14 16:19:45.4794 AllServer 1 (Program.cs:29) server start........................
+2017-09-14 16:19:45.5804 AllServer 1 (LocationComponent.cs:103) location add key: 98656399196161 appid: 1
+2017-09-14 16:19:48.9834 AllServer 1 (LocationComponent.cs:103) location add key: 380131376168974 appid: 1
+2017-09-14 16:19:48.9874 AllServer 1 (LocationComponent.cs:103) location add key: 380131376168976 appid: 1
+2017-09-14 16:19:49.0244 AllServer 1 (LocationComponent.cs:202) location get key: 380131376168976 1
+2017-09-14 16:19:49.0694 AllServer 1 (LocationComponent.cs:202) location get key: 380131376168974 1
+2017-09-14 16:19:56.6504 AllServer 1 (LocationComponent.cs:103) location add key: 380131376693273 appid: 1
+2017-09-14 16:19:56.6504 AllServer 1 (LocationComponent.cs:103) location add key: 380131376693275 appid: 1
+2017-09-14 16:19:56.6644 AllServer 1 (LocationComponent.cs:202) location get key: 380131376693275 1
+2017-09-14 16:19:56.6644 AllServer 1 (LocationComponent.cs:202) location get key: 380131376693273 1
+2017-09-14 16:19:57.7274 AllServer 1 (LocationComponent.cs:103) location add key: 380131376758818 appid: 1
+2017-09-14 16:19:57.7274 AllServer 1 (LocationComponent.cs:103) location add key: 380131376758820 appid: 1
+2017-09-14 16:19:57.7574 AllServer 1 (LocationComponent.cs:202) location get key: 380131376758820 1
+2017-09-14 16:19:57.7574 AllServer 1 (LocationComponent.cs:202) location get key: 380131376758818 1
+2017-09-14 16:20:03.1994 AllServer 1 (LocationComponent.cs:103) location add key: 380131377086508 appid: 1
+2017-09-14 16:20:03.1994 AllServer 1 (LocationComponent.cs:103) location add key: 380131377086510 appid: 1
+2017-09-14 16:20:03.2144 AllServer 1 (LocationComponent.cs:202) location get key: 380131377086510 1
+2017-09-14 16:20:03.2144 AllServer 1 (LocationComponent.cs:202) location get key: 380131377086508 1
+2017-09-14 16:24:06.1864 AllServer 1 (Program.cs:29) server start........................
+2017-09-14 16:24:06.3134 AllServer 1 (LocationComponent.cs:103) location add key: 98656416301057 appid: 1
+2017-09-14 16:24:11.1734 AllServer 1 (LocationComponent.cs:103) location add key: 380131393339406 appid: 1
+2017-09-14 16:24:11.1784 AllServer 1 (LocationComponent.cs:103) location add key: 380131393339408 appid: 1
+2017-09-14 16:24:11.1784 AllServer 1 (LocationComponent.cs:202) location get key: 380131393339408 1
+2017-09-14 16:24:11.2284 AllServer 1 (LocationComponent.cs:202) location get key: 380131393339406 1
+2017-09-14 16:24:20.0984 AllServer 1 (LocationComponent.cs:111) location remove key: 380131393339406

@@ -1,0 +1,5 @@
+H:\U3DWork\Egametang-master\Bin\Hotfix.dll
+H:\U3DWork\Egametang-master\Bin\Hotfix.pdb
+H:\U3DWork\Egametang-master\Server\Hotfix\obj\Debug\Server.Hotfix.csprojResolveAssemblyReference.cache
+H:\U3DWork\Egametang-master\Server\Hotfix\obj\Debug\Hotfix.dll
+H:\U3DWork\Egametang-master\Server\Hotfix\obj\Debug\Hotfix.pdb

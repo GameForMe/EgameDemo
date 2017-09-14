@@ -1,0 +1,7 @@
+H:\U3DWork\Egametang-master\Bin\NLog.config
+H:\U3DWork\Egametang-master\Bin\App.exe.config
+H:\U3DWork\Egametang-master\Bin\App.exe
+H:\U3DWork\Egametang-master\Bin\App.pdb
+H:\U3DWork\Egametang-master\Server\App\obj\Debug\Server.App.csprojResolveAssemblyReference.cache
+H:\U3DWork\Egametang-master\Server\App\obj\Debug\App.exe
+H:\U3DWork\Egametang-master\Server\App\obj\Debug\App.pdb

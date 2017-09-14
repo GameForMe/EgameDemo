@@ -1,0 +1,5 @@
+H:\U3DWork\Egametang-master\Bin\Base.dll
+H:\U3DWork\Egametang-master\Bin\Base.pdb
+H:\U3DWork\Egametang-master\Server\Base\obj\Debug\Server.Base.csprojResolveAssemblyReference.cache
+H:\U3DWork\Egametang-master\Server\Base\obj\Debug\Base.dll
+H:\U3DWork\Egametang-master\Server\Base\obj\Debug\Base.pdb
