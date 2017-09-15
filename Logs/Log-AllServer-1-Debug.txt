@@ -33,3 +33,37 @@
 2017-09-14 16:24:11.2284 AllServer 1 (Actor_TestHandler.cs:11) message client->gate->map->gate->client
 2017-09-14 16:24:11.2284 AllServer 1 (LocationComponent.cs:202) location get key: 380131393339406 1
 2017-09-14 16:24:20.0984 AllServer 1 (LocationComponent.cs:111) location remove key: 380131393339406
+2017-09-14 22:17:56.9350 AllServer 1  server start........................
+2017-09-14 22:17:57.0805 AllServer 1  加速buff
+2017-09-14 22:18:02.2425 AllServer 1  System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at Model.NetHelper.GetAddressIPs () [0x0000d] in <824a6bb2659447a99e3192b6486f7acb>:0 
+  at Model.AppManagerComponent.Start () [0x00001] in <619ab5394b9b4017b08182bffa280878>:0 
+  at Model.AppManagerComponentEvent.Start () [0x00007] in <619ab5394b9b4017b08182bffa280878>:0 
+  at Model.ObjectEvents.Start () [0x00049] in <619ab5394b9b4017b08182bffa280878>:0 
+  at Model.ObjectEvents.Update () [0x00001] in <619ab5394b9b4017b08182bffa280878>:0 
+  at App.Program.Main (System.String[] args) [0x00461] in <cec7b6676da943f5b792a0849244c9b4>:0 
+2017-09-14 22:18:02.2900 AllServer 1  location add key: 98657807630337 appid: 1
+2017-09-14 22:18:17.6827 AllServer 1  location add key: 380132785782797 appid: 1
+2017-09-14 22:18:17.6878 AllServer 1  location add key: 380132785782799 appid: 1
+2017-09-14 22:18:17.7315 AllServer 1  location get key: 380132785782799 1
+2017-09-14 22:18:17.7768 AllServer 1  message client->gate->map->gate->client
+2017-09-14 22:18:17.7910 AllServer 1  location get key: 380132785782797 1
+2017-09-14 22:19:56.4381 AllServer 1  location remove key: 380132785782797
+2017-09-14 22:38:30.0627 AllServer 1 (Program.cs:29) server start........................
+2017-09-14 22:38:30.2324 AllServer 1 (Program.cs:95) 加速buff
+2017-09-14 22:38:35.3691 AllServer 1 (Program.cs:115) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:111 
+2017-09-14 22:38:35.4289 AllServer 1 (LocationComponent.cs:103) location add key: 98657888436225 appid: 1
+2017-09-14 22:39:02.8963 AllServer 1 (Program.cs:29) server start........................
+2017-09-14 22:39:03.0022 AllServer 1 (Program.cs:95) 加速buff

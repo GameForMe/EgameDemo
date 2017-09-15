@@ -1,7 +1,9 @@
-H:\U3DWork\Egametang-master\Bin\NLog.config
-H:\U3DWork\Egametang-master\Bin\App.exe.config
-H:\U3DWork\Egametang-master\Bin\App.exe
-H:\U3DWork\Egametang-master\Bin\App.pdb
-H:\U3DWork\Egametang-master\Server\App\obj\Debug\Server.App.csprojResolveAssemblyReference.cache
-H:\U3DWork\Egametang-master\Server\App\obj\Debug\App.exe
-H:\U3DWork\Egametang-master\Server\App\obj\Debug\App.pdb
+/Users/zys/U3DWork/GitWork/EgameDemo/Bin/NLog.config
+/Users/zys/U3DWork/GitWork/EgameDemo/Bin/App.exe.config
+/Users/zys/U3DWork/GitWork/EgameDemo/Bin/App.exe
+/Users/zys/U3DWork/GitWork/EgameDemo/Bin/App.pdb
+/Users/zys/U3DWork/GitWork/EgameDemo/Server/App/obj/Debug/Server.App.csprojResolveAssemblyReference.cache
+/Users/zys/U3DWork/GitWork/EgameDemo/Server/App/obj/Debug/Server.App.csproj.App.exe.config
+/Users/zys/U3DWork/GitWork/EgameDemo/Server/App/obj/Debug/Server.App.csproj.CoreCompileInputs.cache
+/Users/zys/U3DWork/GitWork/EgameDemo/Server/App/obj/Debug/App.exe
+/Users/zys/U3DWork/GitWork/EgameDemo/Server/App/obj/Debug/App.pdb
