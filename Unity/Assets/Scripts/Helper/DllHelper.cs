@@ -18,11 +18,21 @@ namespace Model
 			byte[] assBytes = code.GetComponent<ReferenceCollector>().Get<TextAsset>("Hotfix.dll").bytes;
 			byte[] mdbBytes = code.GetComponent<ReferenceCollector>().Get<TextAsset>("Hotfix.pdb").bytes;
 
-			using (MemoryStream fs = new MemoryStream(assBytes))
-			using (MemoryStream p = new MemoryStream(mdbBytes))
+//			using (MemoryStream fs = new MemoryStream(assBytes))
+//			using (MemoryStream p = new MemoryStream(mdbBytes))
+//			{
+//				Init.Instance.AppDomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
+//			}
+	
+	       using (System.IO.MemoryStream fs = new MemoryStream(assBytes))
 			{
-				Init.Instance.AppDomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
+				using (System.IO.MemoryStream p = new MemoryStream(mdbBytes))
+				{
+					Init.Instance.AppDomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
+				}
 			}
+	
+			
 		}
 #else
 		public static Assembly LoadHotfixAssembly()

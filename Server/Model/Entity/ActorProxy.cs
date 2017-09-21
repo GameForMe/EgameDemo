@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using MongoDB.Bson.Serialization.Attributes;
@@ -59,11 +58,11 @@ namespace Model
 
 		public override async Task<AResponse> Run()
 		{
-			ActorRequest request = new ActorRequest() { Id = this.proxy.Id, AMessage = this.message };
-			Response response = await this.proxy.RealCall<Response>(request, this.proxy.CancellationTokenSource.Token);
+			ActorRpcRequest request = new ActorRpcRequest() { Id = this.proxy.Id, AMessage = this.message };
+			ActorRpcResponse response = await this.proxy.RealCall<ActorRpcResponse>(request, this.proxy.CancellationTokenSource.Token);
 			if (response.Error != ErrorCode.ERR_NotFoundActor)
 			{
-				this.Tcs.SetResult(response);
+				this.Tcs.SetResult((Response)response.AMessage);
 			}
 			return response;
 		}
@@ -199,7 +198,7 @@ namespace Model
 						this.RunningTasks.Enqueue(actorTask);
 					}
 					ObjectHelper.Swap(ref this.RunningTasks, ref this.WaitingTasks);
-
+					
 					// 失败3次则清空actor发送队列，返回失败
 					if (this.failTimes > 3)
 					{
@@ -210,9 +209,9 @@ namespace Model
 						}
 						return;
 					}
-
+					
 					// 等待一会再发送
-					await this.Parent.GetComponent<TimerComponent>().WaitAsync(this.failTimes * 500);
+					await Game.Scene.GetComponent<TimerComponent>().WaitAsync(this.failTimes * 500);
 					int appId = await Game.Scene.GetComponent<LocationProxyComponent>().Get(this.Id);
 					this.Address = Game.Scene.GetComponent<StartConfigComponent>().Get(appId).GetComponent<InnerConfig>().Address;
 					this.CancellationTokenSource = new CancellationTokenSource();

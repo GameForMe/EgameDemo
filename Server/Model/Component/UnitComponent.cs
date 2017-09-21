@@ -20,6 +20,14 @@ namespace Model
 
 		public void Remove(long id)
 		{
+			Unit unit;
+			this.idUnits.TryGetValue(id, out unit);
+			this.idUnits.Remove(id);
+			unit?.Dispose();
+		}
+
+		public void RemoveNoDispose(long id)
+		{
 			this.idUnits.Remove(id);
 		}
 

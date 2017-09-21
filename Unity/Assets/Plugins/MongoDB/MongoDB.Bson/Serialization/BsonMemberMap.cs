@@ -16,7 +16,9 @@
 using System;
 using System.Linq.Expressions;
 using System.Reflection;
-//using System.Reflection.Emit;
+#if !AOT
+using System.Reflection.Emit;		
+#endif
 using MongoDB.Bson.Serialization.Serializers;
 
 namespace MongoDB.Bson.Serialization
@@ -580,24 +582,44 @@ namespace MongoDB.Bson.Serialization
                 throw new BsonSerializationException(message);
             }
 
-			// ios上不支持Emit
-            //var sourceType = fieldInfo.DeclaringType;
-            //var method = new DynamicMethod("Set" + fieldInfo.Name, null, new[] { typeof(object), typeof(object) }, true);
-            //var gen = method.GetILGenerator();
-			//
-            //gen.Emit(OpCodes.Ldarg_0);
-            //gen.Emit(OpCodes.Castclass, sourceType);
-            //gen.Emit(OpCodes.Ldarg_1);
-            //gen.Emit(OpCodes.Unbox_Any, fieldInfo.FieldType);
-            //gen.Emit(OpCodes.Stfld, fieldInfo);
-            //gen.Emit(OpCodes.Ret);
-			//
-            //return (Action<object, object>)method.CreateDelegate(typeof(Action<object, object>));
+#if AOT
 	        return (obj, value) => { fieldInfo.SetValue(obj, value); };
-        }
+#else
+			var sourceType = fieldInfo.DeclaringType;
+			var method = new DynamicMethod("Set" + fieldInfo.Name, null, new[] { typeof(object), typeof(object) }, true);
+			var gen = method.GetILGenerator();
+			
+			gen.Emit(OpCodes.Ldarg_0);
+			gen.Emit(OpCodes.Castclass, sourceType);
+			gen.Emit(OpCodes.Ldarg_1);
+			gen.Emit(OpCodes.Unbox_Any, fieldInfo.FieldType);
+			gen.Emit(OpCodes.Stfld, fieldInfo);
+			gen.Emit(OpCodes.Ret);
+			
+			return (Action<object, object>)method.CreateDelegate(typeof(Action<object, object>));
+#endif
+		}
 
-        private Func<object, object> GetGetter()
+		private Func<object, object> GetGetter()
         {
+            #if AOT
+            PropertyInfo propertyInfo = _memberInfo as PropertyInfo;
+            if (propertyInfo != null)
+            {
+                MethodInfo getMethodInfo = propertyInfo.GetGetMethod();
+                if (getMethodInfo == null)
+                {
+                    var message = string.Format(
+                        "The property '{0} {1}' of class '{2}' has no 'get' accessor.",
+                        propertyInfo.PropertyType.FullName, propertyInfo.Name, propertyInfo.DeclaringType.FullName);
+                    throw new BsonSerializationException(message);
+                }
+                return (obj) => { return getMethodInfo.Invoke(obj, null); };
+            }
+
+            FieldInfo fieldInfo = _memberInfo as FieldInfo;
+            return (obj) => { return fieldInfo.GetValue(obj); };
+            #else
             var propertyInfo = _memberInfo as PropertyInfo;
             if (propertyInfo != null)
             {
@@ -625,10 +647,17 @@ namespace MongoDB.Bson.Serialization
             );
 
             return lambdaExpression.Compile();
+            #endif
         }
+
 
         private Action<object, object> GetPropertySetter()
         {
+            #if AOT
+            var propertyInfo = (PropertyInfo) _memberInfo;
+
+            return (obj, value) => { propertyInfo.SetValue(obj, value); };
+            #else
             var propertyInfo = (PropertyInfo)_memberInfo;
             var setMethodInfo = propertyInfo.SetMethod;
             if (IsReadOnly)
@@ -653,6 +682,7 @@ namespace MongoDB.Bson.Serialization
             );
 
             return lambdaExpression.Compile();
+            #endif
         }
 
         private void ThrowFrozenException()

@@ -1,6 +1,7 @@
 ﻿using System;
 using Model;
 
+
 namespace Hotfix
 {
 	public static class Init
@@ -9,9 +10,14 @@ namespace Hotfix
 		{
 			try
 			{
+			
+				 Log.Debug("Hotfix  Init sgtart");
 				Hotfix.Scene.ModelScene = Game.Scene;
+				Log.Debug("Hotfix  Init add UIComponent");
 				Hotfix.Scene.AddComponent<UIComponent>();
+				Log.Debug("Hotfix  Init add EventComponent");
 				Hotfix.Scene.GetComponent<EventComponent>().Run(EventIdType.InitSceneStart);
+				Log.Debug("Hotfix  Init end");
 			}
 			catch (Exception e)
 			{

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Text;
 
+
 namespace Model
 {
 	public static class ByteHelper
 	{
 		public static string ToHex(this byte b)
 		{
+			
 			return b.ToString("X2");
 		}
 

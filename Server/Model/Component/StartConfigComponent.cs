@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Model
 {
@@ -15,9 +16,7 @@ namespace Model
 	
 	public class StartConfigComponent: Component
 	{
-		private readonly List<StartConfig> allConfigs = new List<StartConfig>();
-
-		private readonly Dictionary<int, StartConfig> configDict = new Dictionary<int, StartConfig>();
+		private Dictionary<int, StartConfig> configDict;
 		
 		public StartConfig StartConfig { get; private set; }
 
@@ -27,10 +26,16 @@ namespace Model
 
 		public StartConfig LocationConfig { get; private set; }
 
-		public StartConfig MapConfig { get; private set; }
+		public List<StartConfig> MapConfigs { get; private set; }
+
+		public List<StartConfig> GateConfigs { get; private set; }
 
 		public void Awake(string path, int appId)
 		{
+			this.configDict = new Dictionary<int, StartConfig>();
+			this.MapConfigs = new List<StartConfig>();
+			this.GateConfigs = new List<StartConfig>();
+
 			string[] ss = File.ReadAllText(path).Split('\n');
 			foreach (string s in ss)
 			{
@@ -42,8 +47,8 @@ namespace Model
 				try
 				{
 					StartConfig startConfig = MongoHelper.FromJson<StartConfig>(s2);
-					this.allConfigs.Add(startConfig);
 					this.configDict.Add(startConfig.AppId, startConfig);
+
 					if (startConfig.AppType.Is(AppType.Realm))
 					{
 						this.RealmConfig = startConfig;
@@ -51,12 +56,22 @@ namespace Model
 
 					if (startConfig.AppType.Is(AppType.Location))
 					{
-						LocationConfig = startConfig;
+						this.LocationConfig = startConfig;
+					}
+
+					if (startConfig.AppType.Is(AppType.DB))
+					{
+						this.DBConfig = startConfig;
 					}
 
 					if (startConfig.AppType.Is(AppType.Map))
 					{
-						MapConfig = startConfig;
+						this.MapConfigs.Add(startConfig);
+					}
+
+					if (startConfig.AppType.Is(AppType.Gate))
+					{
+						this.GateConfigs.Add(startConfig);
 					}
 				}
 				catch (Exception)
@@ -82,7 +97,15 @@ namespace Model
 
 		public StartConfig[] GetAll()
 		{
-			return this.allConfigs.ToArray();
+			return this.configDict.Values.ToArray();
+		}
+
+		public int Count
+		{
+			get
+			{
+				return this.configDict.Count;
+			}
 		}
 	}
 }

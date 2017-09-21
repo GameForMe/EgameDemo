@@ -12,7 +12,7 @@ namespace MyEditor
 {
 	public class ServerCommandLineEditor: EditorWindow
 	{
-		private const string ConfigDir = @"..\Config\StartConfig\";
+		private const string ConfigDir = @"../Config/StartConfig/";
 
 		private List<string> files;
 

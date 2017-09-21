@@ -33,3 +33,13 @@
   at Model.ComponentFactory.Create[T,A] (Model.Entity entity, A a) [0x00028] in <619ab5394b9b4017b08182bffa280878>:0 
   at Model.Entity.AddComponent[K,P1] (P1 p1) [0x00001] in <619ab5394b9b4017b08182bffa280878>:0 
   at App.Program.Main (System.String[] args) [0x00048] in <cec7b6676da943f5b792a0849244c9b4>:0  Program.Main
+2017-09-20 16:56:54.3599    System.Reflection.ReflectionTypeLoadException: The classes in the module cannot be loaded.
+  at (wrapper managed-to-native) System.Reflection.Assembly:GetTypes (System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at Model.ObjectEvents.Add (System.String name, System.Reflection.Assembly assembly) [0x0003a] in <a6e1d078adb145a5ad7a4f0a7413926e>:0 
+  at App.Program.Main (System.String[] args) [0x0003d] in <5e5454bb170a468fb18dc63aaae04c4c>:0  Program.Main => Log.Error => NLogAdapter.Error
+2017-09-20 17:30:21.1332   (Program.cs:125) System.Reflection.ReflectionTypeLoadException: The classes in the module cannot be loaded.
+  at (wrapper managed-to-native) System.Reflection.Assembly:GetTypes (System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/Assembly.cs:410 
+  at Model.ObjectEvents.Add (System.String name, System.Reflection.Assembly assembly) [0x0003a] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:65 
+  at App.Program.Main (System.String[] args) [0x0002e] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:19  Program.Main => Log.Error => NLogAdapter.Error

@@ -6,17 +6,18 @@
       <sourceFolder url="file://$MODULE_DIR$/../../Base" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Hotfix" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Model" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../ThirdParty/Nuget" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ThirdParty/ENet/ENet.vcxproj" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../App/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Base/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Hotfix/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../Model/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../ThirdParty/Nuget/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../ThirdParty/Nuget/obj" />
       <excludeFolder url="file://$MODULE_DIR$/../../packages" />
     </content>
     <content url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/DoubleMap.cs">
       <sourceFolder url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/DoubleMap.cs" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/EQueue.cs">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/EQueue.cs" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/Helper/ArrayHelper.cs">
       <sourceFolder url="file://$MODULE_DIR$/../../../Unity/Assets/Scripts/Base/Helper/ArrayHelper.cs" isTestSource="false" />

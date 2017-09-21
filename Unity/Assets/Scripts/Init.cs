@@ -58,13 +58,15 @@ namespace Model
 				this.onApplicationQuit = new MonoStaticMethod(hotfixInit, "OnApplicationQuit");
 #endif
 
+				Log.Debug("add cp");
+				
 				Game.Scene.AddComponent<OpcodeTypeComponent>();
 				Game.Scene.AddComponent<MessageDispatherComponent>();
 				Game.Scene.AddComponent<NetOuterComponent>();
 				Game.Scene.AddComponent<ResourcesComponent>();
 				Game.Scene.AddComponent<BehaviorTreeComponent>();
 				Game.Scene.AddComponent<ConfigComponent>();
-
+				Log.Debug("will" + "   run");
 				// 进入热更新层
 				this.start.Run();
 			}

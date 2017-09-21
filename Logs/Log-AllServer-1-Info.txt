@@ -35,3 +35,90 @@
 2017-09-14 22:38:30.0627 AllServer 1 (Program.cs:29) server start........................
 2017-09-14 22:38:35.4289 AllServer 1 (LocationComponent.cs:103) location add key: 98657888436225 appid: 1
 2017-09-14 22:39:02.8963 AllServer 1 (Program.cs:29) server start........................
+2017-09-17 21:36:34.0476 AllServer 1  server start........................
+2017-09-17 21:36:39.3369 AllServer 1  location add key: 98674631835649 appid: 1
+2017-09-17 21:36:47.6246 AllServer 1 (Program.cs:31) server start........................
+2017-09-17 21:38:27.1090 AllServer 1 (LocationComponent.cs:103) location add key: 98674632753153 appid: 1
+2017-09-17 23:49:30.6938 AllServer 1 (Program.cs:29) server start........................
+2017-09-17 23:49:36.0705 AllServer 1 (LocationComponent.cs:103) location add key: 98675154550785 appid: 1
+2017-09-18 00:03:08.5699 AllServer 1 (Program.cs:29) server start........................
+2017-09-18 00:03:23.3605 AllServer 1 (LocationComponent.cs:103) location add key: 98675208224769 appid: 1
+2017-09-18 00:09:48.0309 AllServer 1 (LocationComponent.cs:103) location add key: 380150211149842 appid: 1
+2017-09-18 00:09:48.0366 AllServer 1 (LocationComponent.cs:103) location add key: 380150211149844 appid: 1
+2017-09-18 00:09:48.0697 AllServer 1 (LocationComponent.cs:202) location get key: 380150211149844 1
+2017-09-18 00:09:48.1522 AllServer 1 (LocationComponent.cs:202) location get key: 380150211149842 1
+2017-09-18 00:14:49.2312 AllServer 1 (LocationComponent.cs:103) location add key: 380150230876187 appid: 1
+2017-09-18 00:14:49.2365 AllServer 1 (LocationComponent.cs:103) location add key: 380150230876189 appid: 1
+2017-09-18 00:14:49.2673 AllServer 1 (LocationComponent.cs:202) location get key: 380150230876189 1
+2017-09-18 00:14:49.2788 AllServer 1 (LocationComponent.cs:202) location get key: 380150230876187 1
+2017-09-19 17:56:56.3922 AllServer 1 (Program.cs:29) server start........................
+2017-09-19 17:57:05.9760 AllServer 1 (LocationComponent.cs:103) location add key: 98685092691969 appid: 1
+2017-09-19 17:57:41.6819 AllServer 1 (LocationComponent.cs:103) location add key: 380160072351757 appid: 1
+2017-09-19 17:57:44.6674 AllServer 1 (LocationComponent.cs:103) location add key: 380160072417295 appid: 1
+2017-09-19 17:58:06.5355 AllServer 1 (LocationComponent.cs:202) location get key: 380160072417295 1
+2017-09-19 17:58:42.2161 AllServer 1  server start........................
+2017-09-19 17:58:47.6942 AllServer 1  location add key: 98685099769857 appid: 1
+2017-09-19 17:58:54.4265 AllServer 1  location add key: 380160077332493 appid: 1
+2017-09-19 17:58:54.4319 AllServer 1  location add key: 380160077332495 appid: 1
+2017-09-19 17:59:02.7551 AllServer 1  location get key: 380160077332495 1
+2017-09-19 17:59:02.7902 AllServer 1  location get key: 380160077332493 1
+2017-09-19 20:54:21.2782 AllServer 1  location remove key: 380160077332493
+2017-09-19 22:47:33.5123 AllServer 1  location add key: 380161212350486 appid: 1
+2017-09-19 22:47:33.5183 AllServer 1  location add key: 380161212416024 appid: 1
+2017-09-19 22:47:35.3806 AllServer 1  location get key: 380161212416024 1
+2017-09-19 22:47:35.3947 AllServer 1  location get key: 380161212350486 1
+2017-09-19 22:55:42.5599 AllServer 1  location remove key: 380161212350486
+2017-09-19 22:57:04.1937 AllServer 1  location add key: 380161249640484 appid: 1
+2017-09-19 22:57:04.1972 AllServer 1  location add key: 380161249771558 appid: 1
+2017-09-19 22:57:17.6190 AllServer 1  location get key: 380161249771558 1
+2017-09-19 22:57:17.6293 AllServer 1  location get key: 380161249640484 1
+2017-09-19 22:58:25.5708 AllServer 1  location add key: 380161255014445 appid: 1
+2017-09-19 22:58:25.5753 AllServer 1  location add key: 380161255145519 appid: 1
+2017-09-19 22:58:31.8765 AllServer 1  location get key: 380161255145519 1
+2017-09-19 22:58:31.8918 AllServer 1  location get key: 380161255014445 1
+2017-09-19 23:01:02.1448 AllServer 1  location add key: 380161265369142 appid: 1
+2017-09-19 23:01:02.1489 AllServer 1  location add key: 380161265369144 appid: 1
+2017-09-19 23:01:07.9123 AllServer 1  location get key: 380161265369144 1
+2017-09-19 23:01:07.9214 AllServer 1  location get key: 380161265369142 1
+2017-09-19 23:02:31.9354 AllServer 1  location remove key: 380161249640484
+2017-09-19 23:02:31.9402 AllServer 1  location remove key: 380161255014445
+2017-09-19 23:02:31.9426 AllServer 1  location remove key: 380161265369142
+2017-09-19 23:04:34.7625 AllServer 1  location add key: 380161279328319 appid: 1
+2017-09-19 23:04:34.7675 AllServer 1  location add key: 380161279328321 appid: 1
+2017-09-19 23:04:59.2954 AllServer 1  location get key: 380161279328321 1
+2017-09-19 23:04:59.3250 AllServer 1  location get key: 380161279328319 1
+2017-09-19 23:05:13.6523 AllServer 1  location add key: 380161281884232 appid: 1
+2017-09-19 23:05:13.6575 AllServer 1  location add key: 380161281884234 appid: 1
+2017-09-19 23:07:49.3537 AllServer 1  location get key: 380161281884234 1
+2017-09-19 23:07:49.3667 AllServer 1  location get key: 380161281884232 1
+2017-09-19 23:22:59.2043 AllServer 1  location remove key: 380161279328319
+2017-09-19 23:22:59.2119 AllServer 1  location remove key: 380161281884232
+2017-09-19 23:35:37.1565 AllServer 1  location add key: 380161401356369 appid: 1
+2017-09-19 23:35:37.1634 AllServer 1  location add key: 380161401356371 appid: 1
+2017-09-19 23:35:40.2475 AllServer 1  location get key: 380161401356371 1
+2017-09-19 23:35:40.2600 AllServer 1  location get key: 380161401356369 1
+2017-09-20 17:32:53.7694 AllServer 001  server start........................
+2017-09-20 17:32:53.8350 AllServer 001  apptype: AllServer
+2017-09-20 17:33:51.2622 AllServer 001  location add key: 380165641142285 appid: 1
+2017-09-20 17:33:51.2745 AllServer 001  location add key: 380165641142287 appid: 1
+2017-09-20 17:47:12.0582 AllServer 001  location add key: 380165693636653 appid: 1
+2017-09-20 17:47:12.0691 AllServer 001  location add key: 380165693636655 appid: 1
+2017-09-20 17:47:58.9054 AllServer 001  location get key: 380165693636655 1
+2017-09-20 17:47:58.9605 AllServer 001  location get key: 380165693636653 1
+2017-09-20 17:48:31.8678 AllServer 001  location lock key: 380165693636655 lockAppId: 1
+2017-09-20 17:48:31.9106 AllServer 001  location unlock key: 380165693636655 unLockAppId: 1 new: 1
+2017-09-20 17:48:42.2659 AllServer 001  location lock key: 380165693636655 lockAppId: 1
+2017-09-20 17:48:42.2840 AllServer 001  location unlock key: 380165693636655 unLockAppId: 1 new: 1
+2017-09-20 18:26:36.5113 AllServer 001 (Program.cs:37) server start........................
+2017-09-20 18:26:36.6613 AllServer 001 (ActorMessageDispatherComponent.cs:36) apptype: AllServer
+2017-09-20 18:26:45.3508 AllServer 001 (LocationComponent.cs:104) location add key: 380165849153549 appid: 1
+2017-09-20 18:26:45.3712 AllServer 001 (LocationComponent.cs:104) location add key: 380165849153551 appid: 1
+2017-09-20 18:26:46.7412 AllServer 001 (LocationComponent.cs:211) location get key: 380165849153551 1
+2017-09-20 18:27:55.5601 AllServer 001 (LocationComponent.cs:130) location lock key: 380165849153551 lockAppId: 1
+2017-09-20 18:43:15.2352 AllServer 001 (Program.cs:37) server start........................
+2017-09-20 18:43:15.4321 AllServer 001 (ActorMessageDispatherComponent.cs:36) apptype: AllServer
+2017-09-20 18:43:30.5971 AllServer 001 (LocationComponent.cs:104) location add key: 380165915082765 appid: 1
+2017-09-20 18:43:30.6169 AllServer 001 (LocationComponent.cs:104) location add key: 380165915082767 appid: 1
+2017-09-20 18:43:31.8062 AllServer 001 (LocationComponent.cs:211) location get key: 380165915082767 1
+2017-09-20 20:14:07.7801 AllServer 001 (Program.cs:37) server start........................
+2017-09-20 20:14:07.9630 AllServer 001 (ActorMessageDispatherComponent.cs:36) apptype: AllServer

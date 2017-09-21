@@ -4,7 +4,8 @@
 	{
 		public const ushort ActorRequest = 1;
 		public const ushort ActorResponse = 2;
-		public const ushort ActorResponseWithM = 3;
+		public const ushort ActorRpcRequest = 3;
+		public const ushort ActorRpcResponse = 4;
 		public const ushort G2G_LockRequest = 10;
 		public const ushort G2G_LockResponse = 11;
 		public const ushort G2G_LockReleaseRequest = 12;
@@ -40,5 +41,8 @@
 
 		public const ushort G2M_CreateUnit = 103;
 		public const ushort M2G_CreateUnit = 104;
+
+		public const ushort M2M_TrasferUnitRequest = 105;
+		public const ushort M2M_TrasferUnitResponse = 106;
 	}
 }

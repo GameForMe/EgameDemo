@@ -1,8 +1,8 @@
-﻿<Properties StartupConfiguration="{CF118143-7E37-744F-BE45-3F55345FEC40}|">
+﻿<Properties StartupConfiguration="{2662B409-6332-1E56-D797-C9025C53BDD6}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.Unity PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Other/ReferenceCollector.cs">
     <Files>
-      <File FileName="Assets/Scripts/Other/ReferenceCollector.cs" Line="18" Column="2" />
+      <File FileName="Assets/Scripts/Other/ReferenceCollector.cs" Line="76" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,5 +10,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

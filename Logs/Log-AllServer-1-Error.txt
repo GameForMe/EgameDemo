@@ -18,3 +18,103 @@
   at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
   at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
   at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:111  Program.Main
+2017-09-17 21:36:39.3076 AllServer 1  System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at Model.NetHelper.GetAddressIPs () [0x0000d] in <8a3eff3cb9374687b24432aa995ff8a0>:0 
+  at Model.AppManagerComponent.Start () [0x00001] in <694f704942004e6d91ae33cb911675cf>:0 
+  at Model.AppManagerComponentEvent.Start () [0x00007] in <694f704942004e6d91ae33cb911675cf>:0 
+  at Model.ObjectEvents.Start () [0x00049] in <694f704942004e6d91ae33cb911675cf>:0 
+  at Model.ObjectEvents.Update () [0x00001] in <694f704942004e6d91ae33cb911675cf>:0 
+  at App.Program.Main (System.String[] args) [0x00461] in <0c60075e349e41f6ab1ea15f1154def0>:0  Program.Main
+2017-09-17 21:38:17.4344 AllServer 1 (Program.cs:120) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:116  Program.Main
+2017-09-17 23:49:36.0262 AllServer 1 (Program.cs:115) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/框架/Egametang/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:111  Program.Main
+2017-09-18 00:03:23.3104 AllServer 1 (Program.cs:115) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/框架/Egametang/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:111  Program.Main
+2017-09-19 17:57:05.9253 AllServer 1 (Program.cs:115) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x0045c] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:111  Program.Main
+2017-09-19 17:58:47.6549 AllServer 1  System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at Model.NetHelper.GetAddressIPs () [0x0000d] in <b882bf4155ed4a8c98b9c987ec3fc57d>:0 
+  at Model.AppManagerComponent.Start () [0x00001] in <6c8000113bf6475eaac096d639ad302e>:0 
+  at Model.AppManagerComponentEvent.Start () [0x00007] in <6c8000113bf6475eaac096d639ad302e>:0 
+  at Model.ObjectEvents.Start () [0x00049] in <6c8000113bf6475eaac096d639ad302e>:0 
+  at Model.ObjectEvents.Update () [0x00001] in <6c8000113bf6475eaac096d639ad302e>:0 
+  at App.Program.Main (System.String[] args) [0x00461] in <7c8e9c28f8b54098be58621d2e5e654a>:0  Program.Main
+2017-09-20 17:32:58.8490 AllServer 001  System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00015] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in <70507a44a84041d599bbfa8f3d0ea5b1>:0 
+  at Model.NetHelper.GetAddressIPs () [0x0000d] in <500f70bea09b45ca8f63c3dadaf68710>:0 
+  at Model.AppManagerComponent.Start () [0x00001] in <a6e1d078adb145a5ad7a4f0a7413926e>:0 
+  at Model.AppManagerComponentEvent.Start () [0x00007] in <a6e1d078adb145a5ad7a4f0a7413926e>:0 
+  at Model.ObjectEvents.Start () [0x00049] in <a6e1d078adb145a5ad7a4f0a7413926e>:0 
+  at Model.ObjectEvents.Update () [0x00001] in <a6e1d078adb145a5ad7a4f0a7413926e>:0 
+  at App.Program.Main (System.String[] args) [0x004b5] in <5e5454bb170a468fb18dc63aaae04c4c>:0  Program.Main => Log.Error => NLogAdapter.Error
+2017-09-20 18:26:41.6820 AllServer 001 (Program.cs:119) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x004b0] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:115  Program.Main => Log.Error => NLogAdapter.Error
+2017-09-20 18:43:20.4494 AllServer 001 (Program.cs:119) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x004b0] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:115  Program.Main => Log.Error => NLogAdapter.Error
+2017-09-20 20:14:12.9787 AllServer 001 (Program.cs:119) System.Net.Sockets.SocketException (0x80004005): Could not resolve host 'zysdeMacBook-Pro.local'
+  at System.Net.Dns.Error_11001 (System.String hostName) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:308 
+  at System.Net.Dns.GetHostByName (System.String hostName) [0x00021] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:439 
+  at System.Net.Dns.GetHostEntry (System.String hostNameOrAddress) [0x00052] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/System/System.Net/Dns.cs:396 
+  at Model.NetHelper.GetAddressIPs () [0x00008] in /Users/zys/U3DWork/GitWork/EgameDemo/Unity/Assets/Scripts/Base/Helper/NetHelper.cs:12 
+  at Model.AppManagerComponent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:23 
+  at Model.AppManagerComponentEvent.Start () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Component/AppManagerComponent.cs:13 
+  at Model.ObjectEvents.Start () [0x00049] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:233 
+  at Model.ObjectEvents.Update () [0x00001] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/Model/Base/Object/ObjectEvents.cs:239 
+  at App.Program.Main (System.String[] args) [0x004b0] in /Users/zys/U3DWork/GitWork/EgameDemo/Server/App/Program.cs:115  Program.Main => Log.Error => NLogAdapter.Error

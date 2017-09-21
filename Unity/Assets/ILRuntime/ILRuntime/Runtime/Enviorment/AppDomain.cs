@@ -14,6 +14,8 @@ using ILRuntime.Runtime.Intepreter;
 using ILRuntime.Runtime.Debugger;
 using ILRuntime.Runtime.Stack;
 using ILRuntime.Other;
+using Model;
+
 namespace ILRuntime.Runtime.Enviorment
 {
     public unsafe delegate StackObject* CLRRedirectionDelegate(ILIntepreter intp, StackObject* esp, IList<object> mStack, CLRMethod method, bool isNewObj);
@@ -329,13 +331,14 @@ namespace ILRuntime.Runtime.Enviorment
         /// <param name="symbolReader">symbol 读取器</param>
         public void LoadAssembly(System.IO.Stream stream, System.IO.Stream symbol, ISymbolReaderProvider symbolReader)
         {
+            Log.Debug("start ;load  assetbly");
             var module = ModuleDefinition.ReadModule(stream); //从MONO中加载模块
-
+            Log.Debug("end ;load  assetbly");
             if (symbolReader != null && symbol != null) 
             {
                 module.ReadSymbols(symbolReader.GetSymbolReader(module, symbol)); //加载符号表
             }
-
+            Log.Debug("end ;load  symbolReader");
             if (module.HasAssemblyReferences) //如果此模块引用了其他模块
             {
                 foreach (var ar in module.AssemblyReferences)
@@ -346,7 +349,7 @@ namespace ILRuntime.Runtime.Enviorment
                         moduleref.Add(ar.FullName);*/
                 }
             }
-
+            Log.Debug("end ;load  HasAssemblyReferences");
             if (module.HasTypes)
             {
                 List<ILType> types = new List<ILType>();
@@ -360,7 +363,7 @@ namespace ILRuntime.Runtime.Enviorment
 
                 }
             }
-
+            Log.Debug("end ;load  获取所有此模块定义的类型");
             if (voidType == null)
             {
                 voidType = GetType("System.Void");
@@ -373,7 +376,9 @@ namespace ILRuntime.Runtime.Enviorment
             }
             module.AssemblyResolver.ResolveFailure += AssemblyResolver_ResolveFailure;
 #if DEBUG
+            Log.Debug("start ;load  NotifyModuleLoaded");
             debugService.NotifyModuleLoaded(module.Name);
+            Log.Debug("end ;load  NotifyModuleLoaded");
 #endif
         }
 
